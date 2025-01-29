@@ -361,33 +361,5 @@
     <p>&copy; 2023 RiceLeef. Cultivating the future, one leaf at a time.</p>
   </footer>
 
-  <div class="leaf" style="top: 20%; left: 10%;"></div>
-  <div class="leaf" style="top: 50%; right: 20%;"></div>
-  <div class="leaf" style="bottom: 30%; left: 50%;"></div>
 
-  <script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Add more floating leaves
-    function createLeaf() {
-      const leaf = document.createElement('div');
-      leaf.classList.add('leaf');
-      leaf.style.left = Math.random() * 100 + 'vw';
-      leaf.style.top = Math.random() * 100 + 'vh';
-      leaf.style.animationDelay = Math.random() * 10 + 's';
-      document.body.appendChild(leaf);
-    }
-
-    for (let i = 0; i < 10; i++) {
-      createLeaf();
-    }
-  </script>
 </body></html>
